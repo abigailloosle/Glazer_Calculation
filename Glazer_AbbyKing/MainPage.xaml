@@ -9,6 +9,39 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="367,34,0,0" Text="Glazer Calculator" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
+        <Button Content="Click Me!" HorizontalAlignment="Left" Margin="404,394,0,0" VerticalAlignment="Top" Click="Button_Click" Width="199" FontSize="18"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="382,140,0,0" Text="Width" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="txtWidth" HorizontalAlignment="Left" Margin="478,133,0,0" Text="" VerticalAlignment="Top" FontSize="18" InputScope="Number" Width="180"/>
+        <TextBlock HorizontalAlignment="Left" Margin="665,145,0,0" Text="in inches" TextWrapping="Wrap" VerticalAlignment="Top" FontStyle="Italic"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="377,205,0,0" Text="Height" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="txtHeight" HorizontalAlignment="Left" Margin="478,198,0,0" Text="" VerticalAlignment="Top" FontSize="18" InputScope="Number" AcceptsReturn="True" Width="180"/>
+        <TextBlock HorizontalAlignment="Left" Margin="667,208,0,0" Text="in inches" TextWrapping="Wrap" VerticalAlignment="Top" FontStyle="Italic"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="353,272,0,0" Text="Tint Color" VerticalAlignment="Top" FontSize="18"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="362,336,0,0" Text="Quantity" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18"/>
+        <Slider x:Name="slidQuantity" HorizontalAlignment="Left" Margin="478,332,0,0" VerticalAlignment="Top" Width="125" FontSize="18" ValueChanged="Slider_ValueChanged"/>
+        <TextBox x:Name="txtSlider" HorizontalAlignment="Left" Margin="626,332,0,0" Text="0" VerticalAlignment="Top" FontSize="18" IsEnabled="False"/>
+        <ComboBox x:Name="comTint" HorizontalAlignment="Left" Margin="478,266,0,0" VerticalAlignment="Top" Width="180" FontSize="18">
+            <ComboBoxItem Background="Black" Content="Black" Foreground="White"/>
+            <ComboBoxItem Background="#FF0074FF" Content="Blue" Foreground="White"/>
+            <ComboBoxItem Background="SaddleBrown" Content="Brown" Foreground="White"/>
+        </ComboBox>
+
+        <TextBox x:Name="txtLength" HorizontalAlignment="Left" Margin="289,515,0,0" Text="" VerticalAlignment="Top" FontSize="18" IsEnabled="False" Width="88"/>
+        <TextBlock HorizontalAlignment="Left" Margin="133,522,0,0" Text="Length of Wood:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18"/>
+
+        <TextBox x:Name="txtArea" HorizontalAlignment="Left" Margin="706,515,0,0" Text="" VerticalAlignment="Top" FontSize="18" AcceptsReturn="True" IsEnabled="False" Width="87"/>
+        <TextBlock HorizontalAlignment="Left" Margin="582,522,0,0" Text="Area of Glass:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18"/>
+
+        <TextBox x:Name="txtDate" HorizontalAlignment="Left" Margin="289,571,0,0" Text="" VerticalAlignment="Top" FontSize="18" Width="234" IsEnabled="False"/>
+        <TextBlock HorizontalAlignment="Left" Margin="153,578,0,0" Text="Date Ordered:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18"/>
+        <TextBlock x:Name="txtError" HorizontalAlignment="Left" Margin="706,183,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="382,528,0,0" Text="in inches" TextWrapping="Wrap" VerticalAlignment="Top" FontStyle="Italic"/>
+        <TextBlock HorizontalAlignment="Left" Margin="798,528,0,0" Text="in inches" TextWrapping="Wrap" VerticalAlignment="Top" FontStyle="Italic"/>
 
     </Grid>
 </Page>
